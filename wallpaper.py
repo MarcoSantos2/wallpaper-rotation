@@ -31,7 +31,7 @@ def rotate_wallpapers(folder_path, interval):
         time.sleep(interval)
 
 if __name__ == "__main__":
-    folder_path = "insert path here"
+    folder_path = "D:\\Coding - Learning and Testing\\Python\\wallpaper-rotation\\images"
     interval = 60  # or any other interval you prefer, in seconds
 
     rotate_wallpapers(folder_path, interval)
