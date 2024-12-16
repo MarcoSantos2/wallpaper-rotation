@@ -3,6 +3,7 @@ import ctypes
 import time
 import itertools
 import sys
+import random 
 
 def set_wallpaper(image_path):
     try:
@@ -24,6 +25,7 @@ def get_images_from_folder(folder_path):
 
 def rotate_wallpapers(folder_path, interval):
     images = get_images_from_folder(folder_path)
+    random.shuffle(images)
     for image in itertools.cycle(images):
         set_wallpaper(image)
         time.sleep(interval)
